@@ -1,0 +1,43 @@
+void tent()
+{
+glBegin(GL_QUADS);      //Tent 1
+
+glColor3ub(45,89,67);
+
+glVertex2i(700,490);
+glVertex2i(700,540);
+glVertex2i(620,540);
+glVertex2i(620,490);
+
+glEnd();
+
+glBegin(GL_TRIANGLES);
+
+glVertex2i(710,540);
+glVertex2i(660,565);
+glVertex2i(610,540);
+glEnd();
+
+glBegin(GL_LINES);
+glVertex2i(610,540);
+glVertex2i(620,520);
+
+glVertex2i(610,540);
+glVertex2i(600,480);
+
+glVertex2i(710,540);
+glVertex2i(690,500);
+
+glVertex2i(710,540);
+glVertex2i(720,480);
+glEnd();
+
+
+glBegin(GL_QUADS);      //Tent 1 Door
+glColor3ub(0,0,0);
+glVertex2i(675,490);
+glVertex2i(675,525);
+glVertex2i(645,525);
+glVertex2i(645,490);
+glEnd();
+}

@@ -1,0 +1,22 @@
+//Hill
+
+void Hill()
+{
+glBegin(GL_POLYGON);
+
+glColor3ub(64,64,64);          //hill-1
+
+glVertex2i(0,550);
+glVertex2i(350,550);
+glVertex2i(320,615);
+glVertex2i(290,625);
+glVertex2i(260,595);
+glVertex2i(210,615);
+glVertex2i(170,595);
+glVertex2i(140,625);
+glVertex2i(110,635);
+glVertex2i(90,555);
+glVertex2i(40,595);
+glVertex2i(10,555);
+glEnd();
+}

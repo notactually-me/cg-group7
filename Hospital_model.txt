@@ -1,0 +1,56 @@
+////Hospital
+
+void Hospital()
+{
+
+    glBegin(GL_QUADS);
+    glColor3ub(196,185,147);
+    glVertex2i(1000,485);  //hospital
+    glVertex2i(1120,485);
+    glVertex2i(1120,585);
+    glVertex2i(1000,585);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(202, 222, 209);
+    glVertex2i(990,585);                 //hospitalborder
+    glVertex2i(1130,585);
+    glVertex2i(1130,600);
+    glVertex2i(990,600);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(232, 25, 12);       //cross-sign
+    glVertex2i(1055,545);
+    glVertex2i(1070,545);
+    glVertex2i(1070,575);
+    glVertex2i(1055,575);
+
+    glVertex2i(1044,553);
+    glVertex2i(1082,553);
+    glVertex2i(1082,567);
+    glVertex2i(1044,567);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(69, 66, 66);
+    glVertex2i(1045,530);
+    glVertex2i(1045,485);
+    glVertex2i(1080,485);
+    glVertex2i(1080,530);
+
+    glColor3ub(69, 66, 66);
+    glVertex2i(1010,535);
+    glVertex2i(1010,515);
+    glVertex2i(1030,515);
+    glVertex2i(1030,535);
+
+    glColor3ub(69, 66, 66);
+    glVertex2i(1110,515);
+    glVertex2i(1110,535);
+    glVertex2i(1090,535);
+    glVertex2i(1090,515);
+    glEnd();
+
+
+}

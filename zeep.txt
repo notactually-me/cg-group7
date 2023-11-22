@@ -1,0 +1,257 @@
+void zeep()
+{
+
+  glPushMatrix();
+
+glTranslatef(0.0, 0.0, 0.0);
+
+glColor3ub(210,180,140);    //Jeep
+//glColor4f(0, 7, 18, 29);
+
+    glBegin(GL_TRIANGLES);      //Jeep
+
+    glVertex2i(290,170);
+    glVertex2i(270,220);
+    glVertex2i(270,175);
+
+    glEnd();
+
+    glBegin(GL_QUADS);
+
+
+
+    glVertex2i(100,130);
+    glVertex2i(130,130);
+    glVertex2i(130,220);
+    glVertex2i(100,220);
+
+    glVertex2i(130,130);        //Tire Cut 1
+    glVertex2i(150,150);
+    glVertex2i(150,220);
+    glVertex2i(130,220);
+
+    glVertex2i(150,150);
+    glVertex2i(180,150);
+    glVertex2i(180,220);
+    glVertex2i(150,220);
+
+    glVertex2i(180,150);
+    glVertex2i(200,130);       //Tire Cut 1
+    glVertex2i(200,220);
+    glVertex2i(180,220);
+
+
+    glVertex2i(200,130);
+    glVertex2i(270,130);
+    glVertex2i(270,220);
+    glVertex2i(200,220);
+
+    glVertex2i(270,130);       //Tire Cut 2
+    glVertex2i(290,150);
+    glVertex2i(290,185);
+    glVertex2i(270,190);
+
+    glVertex2i(290,150);
+    glVertex2i(320,150);
+    glVertex2i(320,180);
+    glVertex2i(290,185);
+
+    glVertex2i(320,150);       //Tire Cut 2
+    glVertex2i(340,130);
+    glVertex2i(340,175);
+    glVertex2i(320,180);
+
+
+    glVertex2i(340,130);
+    glVertex2i(360,130);
+    glVertex2i(360,170);
+    glVertex2i(340,175);
+
+
+    glColor3ub(229,203,144);
+
+    glVertex2i(210,135);           // Door
+    glVertex2i(265,135);
+    glVertex2i(265,215);
+    glVertex2i(210,215);
+
+    glColor3ub(8, 69, 112);
+    glVertex2i(215,180);           // Door Window
+    glVertex2i(260,180);
+    glVertex2i(260,210);
+    glVertex2i(215,210);
+
+
+
+
+    glVertex2i(140,180);
+    glVertex2i(190,180);
+    glVertex2i(190,210);
+    glVertex2i(140,210);
+
+
+
+
+    glEnd();
+
+
+    glPushMatrix();
+
+    glTranslatef(0,0,0.0);
+
+    glBegin(GL_POLYGON);
+    glColor3ub(104, 110, 105);
+     for(int i=0;i<=360;i++)
+    {
+        float angle= i*3.1416/180;
+
+    glVertex2f(165+cos(angle)*30,135+sin(angle)*25);
+    }
+
+    glEnd();
+
+    glPopMatrix();
+
+
+    glPushMatrix();
+
+    glTranslatef(0,0,0.0);
+
+    glBegin(GL_POLYGON);
+    glColor3ub(31, 36, 32);
+     for(int i=0;i<=360;i++)
+    {
+        float angle= i*3.1416/180;
+
+    glVertex2f(165+cos(angle)*19,135+sin(angle)*17);
+    }
+
+    glEnd();
+
+    glPopMatrix();
+
+
+    glPushMatrix();
+    glTranslatef(0,0,0.0);
+
+    glBegin(GL_POLYGON);
+    glColor3ub(153, 144, 95);
+     for(int i=0;i<=360;i++)
+    {
+        float angle= i*3.1416/180;
+
+    glVertex2f(165+cos(angle)*9,135+sin(angle)*9);
+    }
+
+    glEnd();
+
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(0,0,0.0);
+
+    glBegin(GL_POLYGON);
+    glColor3ub(104, 110, 105);
+     for(int i=0;i<=360;i++)
+    {
+        float angle= i*3.1416/180;
+
+    glVertex2f(305+cos(angle)*30,135+sin(angle)*25);
+    }
+
+    glEnd();
+
+    glPopMatrix();
+
+
+    glPushMatrix();
+    glTranslatef(0,0,0.0);
+
+
+    glBegin(GL_POLYGON);
+    glColor3ub(31, 36, 32);
+     for(int i=0;i<=360;i++)
+    {
+        float angle= i*3.1416/180;
+
+    glVertex2f(305+cos(angle)*19,135+sin(angle)*17);
+    }
+
+    glEnd();
+
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(0,0,0.0);
+
+    glBegin(GL_POLYGON);
+    glColor3ub(153, 144, 95);
+     for(int i=0;i<=360;i++)
+    {
+        float angle= i*3.1416/180;
+
+    glVertex2f(305+cos(angle)*9,135+sin(angle)*9);
+    }
+
+    glEnd();
+
+    glPopMatrix();
+
+
+    glBegin(GL_QUADS);
+
+    glVertex2i(205,170);
+    glVertex2i(220,170);
+    glVertex2i(220,175);
+    glVertex2i(205,175);
+
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+
+    glVertex2i(100,175);
+    glVertex2i(110,175);
+    glVertex2i(110,220);
+    glVertex2i(100,220);
+
+    glEnd();
+
+
+
+    glBegin(GL_QUADS);
+
+    glVertex2i(122,155);
+    glVertex2i(132,155);
+    glVertex2i(132,165);
+    glVertex2i(122,165);
+
+
+    glEnd();
+
+
+
+}
+void Scaledzeep()
+{
+    glPushMatrix();
+
+    glMatrixMode(GL_MODELVIEW);
+
+    glPushMatrix();
+    glTranslatef(0,0,0);
+    glTranslatef(900,140,0);
+  glScalef(-0.9,1.0,0.0);
+    zeep();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(tpos,0,0);
+    glTranslatef(200,122,0);
+    glScalef(0.9,0.4,0);
+    rocket();
+    glPopMatrix();
+
+    glPopMatrix();
+
+}
